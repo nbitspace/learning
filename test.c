@@ -1,9 +1,3 @@
-/*
- * test.c
- *
- *  Created on: 02-Aug-2022
- *      Author: geeky
- */
 #include<stdio.h>
 #include<math.h>
 
