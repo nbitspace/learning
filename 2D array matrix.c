@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : test.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include<stdio.h>
 
@@ -58,8 +48,8 @@ int main(){
 	    for(j=0;j<3;++j)
 	    {
 	    	//printf("x i %d and j %d val %d \n",i,j,x[i][j]);
-	    	     //    1      1 =2
-                 //   0 1 +  0+1
+	    	    
+
 	    	z[i][j]=x[i][j]+y[i][j];
 
 	      printf("\n %d",z[i][j]);
@@ -72,7 +62,7 @@ int main(){
 
 
 //
-//	printf("Enter first matrix\n");
+//	printf("Enter first number\n");
 //
 //	for (row=0;row<3; ++row)
 //
@@ -81,7 +71,7 @@ int main(){
 //	for (col=0; col<3; ++col)
 //	{
 //
-//	scanf("%d",&a[row][col]); 0 row ku 0 col  =1 then 0 row ku 1 col ku =1
+//	scanf("%d",&a[row][col]); 
 //
 //
 //	}
@@ -98,7 +88,7 @@ int main(){
 //		printf("\n");
 //	}
 //
-//	printf("Enter second matrix\n");
+//	printf("Enter second number\n");
 //
 //	for (row=0;row<3; ++row)
 //	{
@@ -109,7 +99,8 @@ int main(){
 //	 scanf("%d",&b[row][col]);
 //	}
 //	}
-//	// add
+
+
 //	for (row=0;row<3; ++row)
 //	{
 //
