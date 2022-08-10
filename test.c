@@ -9,7 +9,7 @@ const int N = 2;
 //	body of the function
 //	return ;
 //}
-//* &
+//pointer:* memory/address: &
 
 /*
  * main mf - 3
