@@ -11,6 +11,9 @@ const int N = 2;
 //}
 //pointer:* memory/address: &
 
+//I am User A
+//I am learning
+
 /*
  * main mf - 3
  * mf -2 - completed
