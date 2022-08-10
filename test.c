@@ -1,3 +1,4 @@
+//learning c programming
 #include<stdio.h>
 #include<math.h>
 
