@@ -18,7 +18,7 @@ int main(){
 	int i,j;
 	//int row,col, a[3][3],b[3][3],c[3][3] ;
 
-	printf("value seted value of X : \n");
+	printf("value of X : \n");
 		for(i=0;i<3;++i)
 		{
 			for(j=0;j<3;++j)
@@ -29,7 +29,7 @@ int main(){
 			printf("\n");
 		}
 
-	printf("value seted value of Y : \n");
+	printf("value of Y : \n");
 	for(i=0;i<3;++i)
     {
 
@@ -77,7 +77,7 @@ int main(){
 //	}
 //
 //	}
-//    printf("show A value : \n");
+//    printf("A value : \n");
 //	for(i=0;i<3;++i)
 //	{
 //		for(j=0;j<3;++j)
