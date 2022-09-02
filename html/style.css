@@ -1,0 +1,28 @@
+
+p {
+	color:tomato;
+}
+h3 {
+	font-size:200%;
+	padding:20px;
+}
+
+a:link {
+	color:red;
+	text-decoration: none;
+}
+
+a:visited {
+	color:green;
+	text-decoration: none;
+}
+
+a:hover {
+	color:black;
+	text-decoration: underline;
+}
+
+a:focus {
+	color: black;
+	text-decoration: underline;
+}
