@@ -1,3 +1,19 @@
+.menulist {
+	display: block;
+	text-align: center;
+	color: tomato;
+	padding: 15px;
+}
+
+.fontstyle {
+	font-size: 35px;
+	background-color: lightgrey;
+}
+
+#cat {
+	color: wheat;
+}
+
 
 p {
 	color:tomato;

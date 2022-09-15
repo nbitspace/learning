@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="UTF-8">
+	<script src="file:///home/geeky/geekey/work/eclipse-workspace/learning/html/js/script.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	
+	<script>
+		function changeText()
+		{
+			document.getElementById("para").innerHTML = "This is a changed text after clicking button.";
+		
+		}
+	</script>
+</head>
+
+<body>
+
+<h3>Text Change:</h3>
+<p id="para" style="color:tomato">This is my initial text.</p>
+<button type="button" onclick="changeText()">Change Text</button>
+<button type="button" onclick="changeColor()">Change Color</button>
+<button type="button" onclick="renderLine()">Display Line</button>
+<button type="button" onclick="getFile(displayFile)">Display File</button>
+<button type="button" onclick="promiseEg()">Promise</button>
+<br><br>
+<input type="text" name="checker" id="checker_id" placeholder="checker">
+<button type="button" onclick="checkerClicked()">checker button</button>
+<br>
+
+<div id="value">Dummy Value</div>
+<br><br>
+<input type="text" name="name" id="name_id" placeholder="name"><br>
+<input type="text" name="dob" id="dob_id" placeholder="dob">
+(or)
+<input type="text" name="age" id="age_id" placeholder="age"><br>
+<input type="text" name="std" id="sub_id" placeholder="std"><br>
+<button type="button" onclick="Student.addStudent()">Submit</button>
+
+<br>
+<br>
+
+<div id="students">
+NOTHING INSIDE
+</div>
+<br><br>
+<div id="message">
+Empty
+</div>
+
+
+</body>
+</html>

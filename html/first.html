@@ -5,6 +5,19 @@
 		<style>
 			p {color:tomato;}
 			h3 {color:darkred}
+			table, td, th
+			{
+				border: 1px;
+				border-collapse: collapse;
+				border-color: blue;
+				border-style: dashed;
+				border-spacing:20px;
+				padding:5px;
+			}
+			th {text-align: left;}
+			tr:nth-child(even) {
+				background-color: lightgrey;
+			}
 		</style>
 		
 		<link rel="stylesheet" href="style.css">
@@ -75,16 +88,19 @@
 		</pre>
 		<h3 style="border:1px solid wheat">Border</h3>
 		<p>
+		
+		<!-- color values in style -->
 		<span style="color:#f7d99f">Name</span>
 		<span style="color:tomato">Age</span>
 		<span style="color:blue">Address</span>
 		<!-- rgb: red green blue-->
-		<span style="color:rgb(112, 79, 255)">Subject</span>
+		<div style="color:rgb(112, 79, 255)">Subject</div>
 		</p>
 		<div style="color:rgba(255, 60, 50, 0.2)">Registration ID</div>
 		<div style="color:hsl(8, 80%, 40%)">Pincode</div>
 		<div style="color:hsla(8, 80%, 40%, 0.4)">Pincode</div>
 		
+		<!-- images -->
 		<img src="image/screenshot.png" alt="Screen Shot" height="200px" width="200"></img>
 		<br><br>
 		<img src="https://cdn.vox-cdn.com/thumbor/lBslmxEJFkOPCtifX2ebOFeb0Hc=/0x0:5400x3600/920x613/filters:focal(2268x1368:3132x2232):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71270160/fermented_foods.0.jpg" height="200px" width="200px" usemap="#mapping">
@@ -98,7 +114,128 @@
 		alert("You clicked the polygon");
 		}
 		</script>
+		<div>
+		<p><img src="https://c.tenor.com/9bAAaf3M8cIAAAAS/smart-yousmart.gif">This is a para.</p>
+		</div>
+		<div>Another div.</div>
 		
-		<p><img src="https://c.tenor.com/9bAAaf3M8cIAAAAS/smart-yousmart.gif" style="float:left;">This is a para.</p>
+		<!-- tables -->
+		<div>
+		<table style="width:90%">
+		<caption>Personal Details</caption>
+		<colgroup>
+			<col span="2" style="background-color:grey;">
+		</colgroup>
+		<tr>
+			<th colspan="2" >Name & Age</th>
+			<!-- <th style="width:100px">Age</th> -->
+			<th style="width:100px">Pin</th>
+			<th>Reg No</th>
+		</tr>
+		<tr>
+			<th style="height:50px">Aara</th>
+			<td>15</td>
+			<td>600028</td>
+		</tr>
+		
+		<tr>
+			<th>Bara</th>
+			<td>17</td>
+			<td>624515</td>
+			<td style="width:100px"></td>
+		</tr>
+		<tr style="height:50px">
+			<td rowspan="2">Cara</td>
+			<td>18</td>
+			<td>600037</td>
+			<td>4</td>
+		</tr>
+		<tr>
+		
+			<td colspan="3">600040</td>
+		</tr>
+		<tr>
+			<th>Lara</th>
+			<td>17</td>
+			<td>624515</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<th>Mara</th>
+			<td>17</td>
+			<td>624515</td>
+			<td >7</td>
+		</tr>
+		<tr>
+			<th>Tara</th>
+			<td>17</td>
+			<td>624515</td>
+			<td >9</td>
+		</tr>
+		<tr>
+			<th>Zara</th>
+			<td>27</td>
+			<td>624515</td>
+			<td >12</td>
+		</tr>
+		</table>
+		</div>
+		<ul style="list-style-type:disclosure-closed;">
+		<h4 class="fontstyle">Menu</h4>
+			<li>Water</li>
+				<ul>
+					<li>Juice</li>
+					<li>Coke</li>
+					<li>Sprite</li>
+				</ul>
+			<li>Mixture</li>
+				<ul>
+					<li>Kara Saegu</li>
+					<li>Boondhi</li>
+				</ul>
+			<li>Chips</li>
+				<ul>
+					<li>Lays</li>
+					<li>Bingo</li>
+				</ul>
+			<li>Chocolate</li>
+				<ul>
+					<li>Nesle</li>
+					<ul>
+						<li>Eclairs</li>
+						<li>Dairy Milk</li>
+					</ul>
+					<li>Amul</li>
+					<ul>
+						<li>Icecream</li>
+						<li>Cone</li>
+					</ul>
+				</ul>
+		</ul>
+		
+		<h4>Attendance</h4>
+		<ol type="i" start="200">
+			<li class="fontstyle">Aara</li>
+			<li>Lara</li>			
+			<li>Mara</li>
+			<li>Zara</li>
+		</ol>
+		
+		<dl>
+			<dt id="cat">Cat</dt>
+			<dd>- Cats are Small</dd>
+			<dd>- Cats are in houses</dd>
+			<dt>Tiger</dt>
+			<dd>-Tigers are Huge</dd>
+			<dd>-Tigers are in forest</dd>
+		</dl>
+		
+		<ul>
+			<li class="menulist fontstyle"><a href="https://google.com">Google</a></li>
+			<li class="menulist"><a href="https://fb.com">FB</a></li>
+			<li class="menulist"><a href="https://instagram.com">Insta</a></li>
+			
+		<ul>
+		
 	</body>
 </html>
