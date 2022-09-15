@@ -1,0 +1,94 @@
+<html>
+<head>
+</head>
+
+<body>
+	<h3>My Form:</h3>
+	<form action="/submitform.php" target="_blank" method="post" autocomplete="on"
+	
+	oninput="res.value= mark.value;
+	res2.value= parseInt(mark.value) + parseInt(mark2.value);
+	
+	"
+	>
+	
+		<fieldset>
+		<legend>Personal Info</legend>
+			<div style="padding:15px">
+				<label for="firstId">First Name</label>
+				<input type="text" id="firstId" name="first" value="Harry"/></br>
+			</div>
+			
+			<input type="text" name="last" placeholder="Last Name"/><br><br>
+			<textarea name="about" rows="5" placeholder="About Yourself"></textarea>
+			
+		</fieldset>
+		<br><br>
+		<input type="password" name="pass" placeholder="Enter a password">
+		<br><br>
+		<label>HTML:</label>
+		<input type="checkbox" name="HTMLname" value="HTMLvalue"><br>
+		<label>C programming:</label>
+		<input type="checkbox" name="Cname" value="Cvalue"><br>
+		<label >C++:</label>
+		<input type="checkbox" name="Cpp" value="Cpp"><br><br>
+		
+		<h4>Age</h4>
+		<input type="radio" name="age" value="youngValue">
+		<label>0-18 years</label><br>
+		<input type="radio" name="age" value="midValue">
+		<label>19-30 years</label><br>
+		<input type="radio" name="age" value="oldValue">
+		<label>31-60 years</label><br>
+		<br>
+		
+		<!-- drop down , select, single-->
+		<label for="nation">Nation:</label><br>
+		<select id="nation" name="nation">
+			<option value="af">Afghan</option>
+			<option value="fr">France</option>
+			<option value="in" selected >India</option>
+			<option value="sp" >Spain</option>
+			<option value="uk" >UK</option>
+			<option value="us" >USA</option>
+		</select>
+		<br><br>
+		
+		<!-- drop down , select, multiple, visible elements-->
+		<label for="course">Course:</label><br>
+		<select id="course" name="course" size=4 multiple>
+			<option value="bsc">BSc</option>
+			<option value="be" selected>BE</option>
+			<option value="phd" >PhD</option>
+			<option value="ma" >MA</option>
+			<option value="ba" >BA</option>
+			<option value="mphil" >MPhil</option>
+		</select>
+		<br><br>
+		<button type="button" onclick="alert('I am saying hello!')">Say Hello!</button>
+		
+		<br><br>
+		Pet:
+		<input list="pets" name="pet">
+		<datalist id="pets">
+			<option value="dog">
+			<option value="cat">
+			<option value="cow">
+		</datalist>
+		<br><br>
+		
+		Mark:
+		0<input type="range" id="mark" name="mark" value=80>100 <br>
+		Your mark is <output name="res" for="mark"></output>
+		<br>
+		Mark 2:<input type="text" id="mark2" name="mark2">
+		<br>
+		Your total mark is <output name="res2" for="mark mark2">
+		
+		<br><br>
+		<input type="submit" value="Submit the form!">
+		
+		
+	</form>
+</body>
+</html>
