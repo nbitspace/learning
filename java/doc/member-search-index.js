@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.nbit.learn","c":"Hello","l":"Hello()","u":"%3Cinit%3E()"},{"p":"com.nbit.learn","c":"Hello","l":"helloWorld()"},{"p":"com.nbit.learn","c":"Hello","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
