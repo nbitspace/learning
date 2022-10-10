@@ -5,7 +5,10 @@ import com.nbit.learn.ControlStatements;
 import com.nbit.learn.Hello;
 import com.nbit.learn.Looping;
 import com.nbit.learn.Operators;
+import com.nbit.learn.StringEg;
 import com.nbit.learn.Variables;
+import com.nbit.learn.algo.ArrayAlgo;
+import com.nbit.learn.oops.OopsEg;
 
 public class Starter {
 	public static void main(String[] args) {
@@ -41,7 +44,16 @@ public class Starter {
 		
 		//com.nbit.learn.Array.arrayIntExamples();
 		//Array.stringArr1d();
-		Array.array2d();
+		//Array.array2d();
+		//Array.className();
+		
+		//StringEg.aboutString();
+		//StringEg.methods1();
+		
+		OopsEg.oops();
+		
+		//Algorithms
+		//ArrayAlgo.greatestNumInArray();
 		
 		System.out.println("End");
 	}

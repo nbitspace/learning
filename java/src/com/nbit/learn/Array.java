@@ -104,22 +104,20 @@ public class Array {
 				};
 		print2D(a);
 		print2D(b);
-
-		System.out.println("Random 2-Dimensional array");
+		
+		//Random value generator
 		Random x = new Random();
 		int temp = x.nextInt(100);
 		System.out.println("Random value:" + temp);
-		
+
+		System.out.println("Random 2-Dimensional array");
 		int[][] c = new int[15][15];
 		for(int i = 0; i < c.length; i++) {
 			for(int j=0; j < c[i].length; j++) {
-				c[i][j] = x.nextInt(100);
+				c[i][j] = x.nextInt(100);//random value 0 - 100
 			}
 		}
-		print2D(c);
-		
-		className();
-		
+		print2D(c);		
 	}
 	
 	public static void className() {
