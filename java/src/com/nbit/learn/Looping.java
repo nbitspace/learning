@@ -1,6 +1,13 @@
 package com.nbit.learn;
 
+import com.nbit.learn.oops.Car;
+
 public class Looping {
+
+	static {
+		System.out.println(Looping.class.getName() + " class loaded");
+	}
+		
 	public static void whileloop() {
 		int i = 0;
 		while (i < 10) {//while block gets executed until the condition becomes false

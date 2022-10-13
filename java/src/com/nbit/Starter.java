@@ -50,7 +50,8 @@ public class Starter {
 		//StringEg.aboutString();
 		//StringEg.methods1();
 		
-		OopsEg.oops();
+		//OopsEg.oops();
+		OopsEg.oops2();
 		
 		//Algorithms
 		//ArrayAlgo.greatestNumInArray();
