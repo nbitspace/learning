@@ -1,19 +1,22 @@
-package com.nbit;
+package com.nbit;//Starter class is inside com/nbit/ folder
 
-import com.nbit.learn.Array;
-import com.nbit.learn.ControlStatements;
-import com.nbit.learn.Hello;
-import com.nbit.learn.Looping;
-import com.nbit.learn.Operators;
-import com.nbit.learn.StringEg;
-import com.nbit.learn.Variables;
+
+import com.nbit.learn.ExceptionHandling;
+import com.nbit.learn.Misc;
+
+//import java.lang.*; - imported by default. We donot need to do this explicitly
+//import com.nbit.learn.*;
+
 import com.nbit.learn.algo.ArrayAlgo;
 import com.nbit.learn.oops.OopsEg;
 
 public class Starter {
-	public static void main(String[] args) {
-		System.out.println("Start");
-		//Hello.helloWorld();
+	//Java starts the program with this main method with String array argument/parameter.
+	public static void main(String[] args) throws Exception {
+		System.out.print("Sta-");
+		main("rt");
+		//com.nbit.learn.Hello.helloWorld();
+		
 		
 		//Variables.varBoolean();
 		//Variables.varInt();
@@ -50,12 +53,42 @@ public class Starter {
 		//StringEg.aboutString();
 		//StringEg.methods1();
 		
+		//UserInput.stringInput();
+		//UserInput.intInput();
+		//UserInput.inputWithBR();
+		
+		//FileExample.readFile();
+		//FileExample.readFileWithScanner();
+		
 		//OopsEg.oops();
-		OopsEg.oops2();
+		//OopsEg.polymorphism();
+		//OopsEg.abstraction();
+		//OopsEg.encapsulation();
+		//OopsEg.misc();
+		
+		//Misc.misc();
+		//ExceptionHandling.example();
+		//ExceptionHandling.catchNullPtrEx();
+		//ExceptionHandling.uncaughtException();
+		//ExceptionHandling.multipleCatch();
+		//ExceptionHandling.catchAnyError();
+		//ExceptionHandling.catchSpecificError();
+		//ExceptionHandling.checkedException();
+		//ExceptionHandling.throwsExample();
+		//ExceptionHandling.throwOurError();
+		ExceptionHandling.ownException();
+		
 		
 		//Algorithms
 		//ArrayAlgo.greatestNumInArray();
-		
+		main();
+	}
+	
+	public static void main() {//Main method overloaded with param count
 		System.out.println("End");
+	}
+	
+	public static void main(String val) {//Main method overloaded with param type
+		System.out.println(val);
 	}
 }

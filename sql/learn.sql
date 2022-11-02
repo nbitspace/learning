@@ -1,0 +1,14 @@
+CREATE TABLE student (
+id INT PRIMARY KEY NOT NULL,
+name TEXT NOT NULL,
+age INT NOT NULL
+);
+
+
+CREATE TABLE teacher (
+id INT NOT NULL,
+name TEXT NOT NULL,
+age INT NOT NULL,
+
+PRIMARY KEY (id)
+);

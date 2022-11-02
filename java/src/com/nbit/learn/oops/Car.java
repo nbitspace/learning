@@ -4,7 +4,7 @@ package com.nbit.learn.oops;
 //An object is created for a class
 //Object is like a variable
 //Object created with new keyword
-public class Car extends Vehicle {//inheritance is done using 'extends' keyword
+public class Car extends Vehicle implements Seat, Window {//inheritance is done using 'extends' keyword
 	//Vehicle is base class
 	//Car is derived class
 	
@@ -62,6 +62,16 @@ public class Car extends Vehicle {//inheritance is done using 'extends' keyword
 				+ " with reg no " + this.reg);
 	}
 	
+	//We can specify @Override or not. This is optional.
+	@Override
+	public void indicator(boolean isLeft) {
+		super.indicator(isLeft);//Base class indicator method is called
+		if (isLeft)
+			System.out.println("Left indicator on the side is ON.");
+		else
+			System.out.println("Right indicator on the side is ON.");
+	}
+	
 	//Static method
 	//Called with Class name. Eg. Car.driveStatic();
 	//This method cannot use (non-static) class/object's attributes. 
@@ -70,4 +80,35 @@ public class Car extends Vehicle {//inheritance is done using 'extends' keyword
 		//System.out.println("Car Colour: " + this.colour);//ERROR
 		System.out.println("Always same output for all objects");
 	}
+
+	@Override
+	void engine() {//Base class Abstract method
+		System.out.println("Car Engine");
+	}
+
+	@Override
+	public void adjustSeat() {
+		System.out.println("Seat Adjusted");
+		
+	}
+
+	@Override
+	public void seatCover() {
+		System.out.println("Seat cover put on");
+		
+	}
+
+	@Override
+	public void openWindow() {
+		System.out.println("Window opened");
+		
+	}
+
+	@Override
+	public void closeWindow() {
+		System.out.println("Window closed");
+		
+	}
+	
+	
 }
