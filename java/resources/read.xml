@@ -1,0 +1,10 @@
+<?xml version="1.0">
+<config>
+	<property>
+		<key>str</key>
+		</value>This is the property value</value>
+	</property>
+	<property>
+		This is the second value
+	</property>
+</config>

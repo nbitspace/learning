@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<contacts_>
+	<contact-info>
+		<name>  Venkadesh &#9825;   </name>
+		<age type="years">21</age>
+		<phone>098765432</phone>
+	</contact-info>
+	<contact-info>
+		<name >&lt; Akash &amp; 
+		Venkat &quot; &gt;</name>
+		<age> 20 </age>
+		<phone>098765432</phone>
+	</contact-info>
+	<contact-info>
+		<name> Raja</name>
+		<age type="years">21</age>
+		<phone>098765432</phone>
+	</contact-info>
+	<!-- <contact name="PC" age='21' phone="543576543" /> -->
+</contacts_>

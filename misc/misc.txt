@@ -1,0 +1,18 @@
+
+
+Host:
+hostname
+Domain Name format
+FQDN
+
+localhost means the same machine
+127.0.0.1 also means localhost
+
+WAF - Web Application Firewall
+
+Well Known Ports:
+80 - http - hyper text transfer protocol
+443 - https
+5432 - postgresql
+6379 - redis
+25 - smtp - simple mail transfer protocol
