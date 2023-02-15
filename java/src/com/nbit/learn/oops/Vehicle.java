@@ -1,7 +1,7 @@
 package com.nbit.learn.oops;
 
-public abstract class Vehicle {
-	public int reg = 321;
+public abstract class Vehicle implements Comparable<Vehicle> {
+	public Integer reg = 321;
 	public String model;
 	public Wheel wheel;// aggregation
 	private boolean headLight = false;// true=on, false=off
@@ -24,6 +24,14 @@ public abstract class Vehicle {
 		wheel = new Wheel();
 		wheel.size = 14;
 		wheel.isTubeless = false;
+	}
+	
+	public int getReg() {//Getter function for reg
+		return reg;
+	}
+	
+	public void setReg(int r) {//Setter function for reg
+		this.reg = r;
 	}
 
 	public void turn() {
@@ -101,4 +109,15 @@ public abstract class Vehicle {
 //	{
 //		System.out.println("Engine definition");
 //	}
+	
+	@Override
+	public int compareTo(Vehicle v) {
+		if(this.reg > v.reg) {
+			return 1;
+		} else if (reg < v.reg) {
+			return -1;
+		} else {
+			return 0;
+		}
+	}
 }

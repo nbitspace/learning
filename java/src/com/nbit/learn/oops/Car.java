@@ -110,5 +110,78 @@ public class Car extends Vehicle implements Seat, Window {//inheritance is done 
 		
 	}
 	
+	//This method executes when GC is called and the object is garbage collected
+	public void finalize() {
+		System.out.println("Garbage Collected: reg:" + reg + " col:" + colour);
+	}
+	
+	//Thread Method Synchronization example
+	synchronized public void syncMethodEg(String s) {
+		try {
+			for (int i = 1; i <= 5; i++) {
+				System.out.println("s:" + s + " thread-name:" 
+			+ Thread.currentThread().getName() + " i:" + i);
+				Thread.sleep(100);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void syncBlockEg(String s) {
+		try {
+			for (int i = 1; i <= 5; i++) {
+				System.out.println("s:" + s + "-nonsync thread-name:" 
+			+ Thread.currentThread().getName() + " i:" + i);
+				Thread.sleep(500);
+			}
+			
+			synchronized (this) {
+				for (int i = 6; i <= 10; i++) {
+					System.out.println("s:" + s + "-sync thread-name:" 
+				+ Thread.currentThread().getName() + " i:" + i);
+					Thread.sleep(200);
+				}
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	synchronized static public void staticSyncMethodEg(String s) {
+		try {
+			for (int i = 1; i <= 5; i++) {
+				System.out.println("s:" + s + " thread-name:" 
+			+ Thread.currentThread().getName() + " i:" + i);
+				Thread.sleep(100);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void staticSyncBlockEg(String s) {
+		try {
+			for (int i = 1; i <= 5; i++) {
+				System.out.println("s:" + s + "-nonsync thread-name:" 
+			+ Thread.currentThread().getName() + " i:" + i);
+				Thread.sleep(500);
+			}
+			
+			synchronized (Car.class) {
+				for (int i = 6; i <= 10; i++) {
+					System.out.println("s:" + s + "-sync thread-name:" 
+				+ Thread.currentThread().getName() + " i:" + i);
+					Thread.sleep(200);
+				}
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
 	
 }

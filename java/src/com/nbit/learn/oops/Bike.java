@@ -29,12 +29,12 @@ public class Bike extends Vehicle implements Cloneable {
 	
 	@Override
 	public String toString() {
-		String val = "";
+		String val = "[";
 		val += "reg=" + this.reg;
 		val += ";petrol=" + this.petrol;
 		val += ";model=" + this.model;
 		val += ";intensity=" + this.intensity;
-		val += ";kms=" + this.kms;
+		val += ";kms=" + this.kms + "]";
 		
 		return val;
 	}
