@@ -4,6 +4,7 @@ package com.nbit;//Starter class is inside com/nbit/ folder
 import java.util.ArrayList;
 
 import com.nbit.learn.ExceptionHandling;
+import com.nbit.learn.HttpReq;
 import com.nbit.learn.Misc;
 
 //import java.lang.*; - imported by default. We donot need to do this explicitly
@@ -28,12 +29,6 @@ import com.nbit.learn.tp.JedisEg;
 public class Starter {
 	//Java starts the program with this main method with String array argument/parameter.
 	public static void main(String[] args) throws Exception {
-		
-		System.out.println(Integer.MAX_VALUE);
-		int a = Integer.MAX_VALUE + 1;
-		System.out.println(a);
-		a += 1;
-		System.out.println(a);
 		
 		System.out.println("Sta-");
 		main("rt");
@@ -81,6 +76,8 @@ public class Starter {
 		
 		//FileExample.readFile();
 		//FileExample.readFileWithScanner();
+		
+		HttpReq.httpRequest();
 		
 		//OopsEg.oops();
 		//OopsEg.polymorphism();
@@ -161,25 +158,12 @@ public class Starter {
 		
 		main();
 	}
-    public static int reverse(int x) {
-        int r = 0;
-        int n = 1;
-        int z = x;
-        while(z !=0) {
-            z = z/10;
-            n = n * 10;
-        }
-        while(x != 0) {
-            n = n / 10;
-            int y = x % 10;
-            r = r + y*n;
-            x = x / 10;
-        }
-        return r;
+    public static int solution(int x) {
+    	return 0;
     }
 	
 	public static void main() {//Main method overloaded with param count
-		System.out.println(reverse(4356 + 1));
+		solution(0);
 		
 		System.out.println("End");
 	}
